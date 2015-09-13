@@ -1,0 +1,66 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+  You only had to look at the lines that were changed, not all 1000+ lines.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    I wouldn't have to save (comment out) sections that I was not using, but might use later.
+    I wouldn't have to worry about changing things, deleting things.
+    If it was working before, I can go back to that - roll back.
+    I could keep a todo list and know when I deleted stuff.
+    I would have a fair idea what the timeline was for what I did when.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Manual save:
+      pros:
+        savepoints have logical meaning, which can be noted.
+        saved files can be assume to meet some standard (like compiles) unless noted.
+      cons:
+        User error. You need to do it. You might forget.
+    Automatic save:
+      pros:
+        Always happens, even when user is distracted.
+        Specify the timeline of progress.
+      cons:
+        savepoints have no logical meaning.
+        could be "too big" - multiple unrelated changes bundled together.
+        could be "too small" - no meaningful change made since last version.
+
+    I always want my work auto-saved, and would like auto-versioning on a small time scale
+    (every 5 minutes) as an undo, but not kept with the actual commits, and expiring after
+    some reasonable span. (During this commit?)
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Google Docs, Dropbox, etc. consider each file to be an individual entity.
+    They are not concerned with the relationship between files.
+    Git is specific to code, where complex relationships between files are common
+    and changes often require editing more than one file.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    git log shows you the history of changes, showing the date, person, comment, and ID#
+    git diff shows you which lines were changed between two given ID#s
+      It does other stuff too, with other options.
+      --shortstat gives just the count of lines added/deleted.
+
+NOTE: Git "checkout" means to fetch the entire repository for a specific version (a specific "commit").
+  It DOES NOT mean to lock the specified file(s) so no-one else can edit it.
+
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Don't have to comment out blocks in case you need them later.
+    Can easily rewind to any point in the process, and compare to any other.
+    Can't "break something" permanently. Can try anything, and go back.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+  Doing the Android course on Udemy!!

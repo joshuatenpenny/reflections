@@ -6,7 +6,12 @@ When would you want to use a remote repository rather than keeping all your work
 
 Describe the differences between forks, clones, and branches. When would you use one instead of another?
 
-	Forks: type of clone on github, duplicate a repository to make a version you control. 
+	Forks: type of clone on github, duplicate a repository to make a version you control.
 		Linked to original, and can ask to merge in changes.
 	Clones: a copy of a repository, locally or from github. no link to original.
 	branches: WITHIN a repository, a named set of commits which derive from another line, but can be merged back in if desired.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+  You can see how your current state compares to that last known state.
+  

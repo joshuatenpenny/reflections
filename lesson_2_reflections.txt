@@ -20,10 +20,16 @@ organized? How would branches help?
   In creating multiple versions of books (provided they were plain-text editable)
   Once interior was done, branch off EPUB version.
 
+  (After watching video - multiple branches to work on different features,
+  which you can merge and commit individually.)
+
 How do the diagrams help you visualize the branch structure?
+  Diagrams show clearly where a branch split from the master, and which are unreachable.
+  Also illustrates the "detatched head" message git gives when checking out older
+  unnamed branches. If you modify it, it will be unreachable unless named as branch.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
-What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
+What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
